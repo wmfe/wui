@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>RIFLE</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script>
+      function rrem (designWidth, remSize) {
+        let percent = remSize / designWidth
+        let doc = window.document
+        let docEl = doc.documentElement
+
+        function setRootSize () {
+          let width = docEl.getBoundingClientRect().width
+        // 绝对值（px）
+          docEl.style.fontSize = width * percent + 'px'
+        // 相对值
+        // docEl.style.fontSize = width * percent * 100 / 16 + '%';
+        }
+        setRootSize()
+        window.addEventListener('resize', setRootSize)
+      }
+
+      // rrem(750, 40)
+    </script>
+  </body>
+</html>

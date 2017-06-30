@@ -1,0 +1,9 @@
+{
+  "button": ["./src/wm-kit/packages/button"],
+  "drawer": ["./src/wm-kit/packages/drawer"],
+  "carousel": ["./src/wm-kit/packages/carousel"],
+  "scroll": ["./src/wm-kit/packages/scroll"],
+  "sticky": ["./src/wm-kit/packages/sticky"],
+  "lazyImage": ["./src/wm-kit/packages/lazyImage"],
+  "drag": ["./src/wm-kit/packages/drag"]
+}
