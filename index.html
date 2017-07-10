@@ -15,12 +15,12 @@
     <!-- built files will be auto injected -->
     <script>
       function rrem (designWidth, remSize) {
-        let percent = remSize / designWidth
-        let doc = window.document
-        let docEl = doc.documentElement
+        var percent = remSize / designWidth
+        var doc = window.document
+        var docEl = doc.documentElement
 
         function setRootSize () {
-          let width = docEl.getBoundingClientRect().width
+          var width = docEl.getBoundingClientRect().width
         // 绝对值（px）
           docEl.style.fontSize = width * percent + 'px'
         // 相对值
