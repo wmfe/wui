@@ -8,29 +8,10 @@
     <meta content="telephone=no" name="format-detection">
     <meta content="email=no" name="format-detection">
     <meta name="msapplication-tap-highlight" content="no">
-    <title>RIFLE</title>
+    <title>WUI</title>
   </head>
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script>
-      function rrem (designWidth, remSize) {
-        var percent = remSize / designWidth
-        var doc = window.document
-        var docEl = doc.documentElement
-
-        function setRootSize () {
-          var width = docEl.getBoundingClientRect().width
-        // 绝对值（px）
-          docEl.style.fontSize = width * percent + 'px'
-        // 相对值
-        // docEl.style.fontSize = width * percent * 100 / 16 + '%';
-        }
-        setRootSize()
-        window.addEventListener('resize', setRootSize)
-      }
-
-      // rrem(750, 40)
-    </script>
   </body>
 </html>
