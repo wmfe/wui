@@ -1,16 +1,13 @@
-# wui
-
 <p align="center">
   <img src="wui.png">
 </p>
 
-# Element
+# wui
 
 [![Build Status](https://travis-ci.org/wmfe/wui.svg?branch=master)](https://travis-ci.org/wmfe/wui)
 [![Coverage Status](https://coveralls.io/repos/github/wmfe/wui/badge.svg?branch=master)](https://coveralls.io/github/wmfe/wui?branch=master)
-[![npm package](https://img.shields.io/npm/v/element-ui.svg)](https://www.npmjs.org/package/w-ui)
-[![NPM downloads](http://img.shields.io/npm/dm/element-ui.svg)](https://npmjs.org/package/w-ui)
-
+[![npm package](https://img.shields.io/npm/v/w-ui.svg)](https://www.npmjs.org/package/w-ui)
+[![NPM downloads](http://img.shields.io/npm/dm/w-ui.svg)](https://npmjs.org/package/w-ui)
 
 
 ` A Vue.js 2.0 UI Toolkit for mobile `
@@ -51,6 +48,7 @@ import {
 
 Vue.component(Select.name, Select)
 Vue.component(Button.name, Button)
+```
 
 For more information, please refer to Quick Start in our documentation.
 

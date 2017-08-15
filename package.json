@@ -1,9 +1,10 @@
 {
-  "name": "wm-ui",
+  "name": "w-ui",
   "version": "1.0.0",
-  "description": "waimai vue ui componment",
-  "author": "ppya liupai",
-  "private": true,
+  "description": "A Vue.js 2.0 UI Toolkit for mobile",
+  "author": "wmfe",
+  "main": "lib/wui.js",
+  "module": "lib/wui.es.js",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -14,8 +15,7 @@
   },
   "dependencies": {
     "vue": "^2.2.6",
-    "vue-router": "^2.3.1",
-    "w-ui": "^1.0.0"
+    "vue-router": "^2.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
@@ -73,15 +73,5 @@
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0",
-    "wui": "0.0.0"
-  },
-  "engines": {
-    "node": ">= 4.0.0",
-    "npm": ">= 3.0.0"
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  }
 }
