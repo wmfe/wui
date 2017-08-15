@@ -1,30 +1,76 @@
-# wm-ui
+# wui
 
-这是一个文档介绍平台
+<p align="center">
+  <img src="wui.png">
+</p>
 
-### ui组件和标签添加： src/package
+# Element
 
-### ui组件和标签展示： src/example
+[![Build Status](https://travis-ci.org/wmfe/wui.svg?branch=master)](https://travis-ci.org/wmfe/wui)
+[![Coverage Status](https://coveralls.io/repos/github/wmfe/wui/badge.svg?branch=master)](https://coveralls.io/github/wmfe/wui?branch=master)
+[![npm package](https://img.shields.io/npm/v/element-ui.svg)](https://www.npmjs.org/package/w-ui)
+[![NPM downloads](http://img.shields.io/npm/dm/element-ui.svg)](https://npmjs.org/package/w-ui)
 
-## Build Setup
+
+
+` A Vue.js 2.0 UI Toolkit for mobile `
+
+Links
+---------
+
+Home Page
+Docs
+awesome-element
+Customize Theme
+Preview and generate theme online
+Wui for React
+Starter Kit
+Design resources
+Boilerplate for bug reports
+CodePen
+JSFiddle
+
+
+Install
+---------
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build  组件展示界面
-
-npm run pkg 生成单独的组件包，直接import里面的js可以使用
-
-# build for production and view the bundle analyzer report
-npm run build --report
+npm install w-ui
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Quick Start
+---------
+
+``` javascript
+import Vue from 'vue'
+import {
+  Select,
+  Button
+  // ...
+} from 'w-ui'
+
+Vue.component(Select.name, Select)
+Vue.component(Button.name, Button)
+
+For more information, please refer to Quick Start in our documentation.
+
+
+Browser Support
+----------------
+
+
+Development
+-----------
+
+
+Change log
+-----------
+Detailed changes for each release are documented in the release notes.
+
+
+Contribution
+-------------
+Please make sure to read the contributing guide (中文 | English) before making a pull request.
 
 ### 目录
      root
