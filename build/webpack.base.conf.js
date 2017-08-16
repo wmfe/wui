@@ -14,7 +14,7 @@ var markdown = require('markdown-it')({
 
 module.exports = {
   entry: {
-    app: './src/main.js'
+    app: './pages/main.js'
   },
   output: {
     path: config.build.assetsRoot,
