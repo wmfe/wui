@@ -23,8 +23,8 @@ var webpackConfig = merge(baseWebpackConfig, {
   output: {
     path: config.build.assetsRoot,
     // filename: 'wmkit.js'
-    filename: utils.assetsPath('js/[name].[chunkhash:5].js'),
-    chunkFilename: utils.assetsPath('js/[id].[chunkhash:5].js'),
+    filename: '[name].[chunkhash:5].js',
+    chunkFilename: '[id].[chunkhash:5].js',
     publicPath: 'public/'
   },
   plugins: [
@@ -55,7 +55,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: config.build.index,
-      template: 'index.html',
+      template: './pages/index.html',
       inject: true,
       minify: {
         removeComments: true,
@@ -86,15 +86,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
       chunks: ['vendor']
-    }),
-    // copy custom static assets
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve(__dirname, '../static'),
-        to: config.build.assetsSubDirectory,
-        ignore: ['.*']
-      }
-    ])
+    })
   ]
 })
 
@@ -120,5 +112,7 @@ if (config.build.bundleAnalyzerReport) {
   var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }
+
+console.log(webpackConfig)
 
 module.exports = webpackConfig
