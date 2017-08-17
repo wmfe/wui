@@ -11,7 +11,7 @@
         <img src="../static/images/oval.svg"/>
         
         <div class="slogan">
-          一套高交互性和高性能的UI库
+          一套高交互性和高性能的<br>移动端UI库
           <p>
             <a href="">demo</a>
             <a href="">可视化工具</a>

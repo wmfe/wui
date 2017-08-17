@@ -1,15 +1,12 @@
 {
-  "name": "wm-ui",
+  "name": "wui-pages",
   "version": "1.0.0",
-  "description": "waimai vue ui componment",
-  "author": "ppya liupai",
-  "private": true,
+  "description": "wui pages",
+  "author": "wmfe",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "pkg": "npm run kit && cross-env NODE_ENV=\"pkg\" node build/build.js",
-    "kit": "cross-env NODE_ENV=\"kit\" node build/build.js",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {

@@ -4,7 +4,7 @@
       <div class="logo"><router-link to="/"><img src="./static/images/wui.png"/>WUI</router-link></div>
       <ul class="top-menu">
         <li><router-link to="/guide">指南</router-link></li>
-        <li><router-link to="/guide">组件</router-link></li>
+        <li><router-link to="/component">组件</router-link></li>
         <li><router-link to="/visual">可视化</router-link></li>
         <li><router-link to="/resource">资源</router-link></li>
         <li><router-link to="/feedback">反馈</router-link></li>
@@ -40,6 +40,11 @@ export default Vue.component('App', {
   }
   ul,li{list-style: none}
   a{text-decoration: none}
+
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   
   .icon{
     display: inline-block;
@@ -93,8 +98,9 @@ export default Vue.component('App', {
       z-index: 10;
       display: flex;
       color: #ccc;
+      text-align: center;
       li{
-        width: 5vw;
+        width: 6vw;
       }
       li:hover{
         color: #fff;

@@ -5,7 +5,7 @@
 
     <section class="page-body">
       <div class="left-panel">
-      wui
+        <Tree></Tree>
       </div>
       <div class="right-panel">
       wui是一个致力于提升『交互效果』和『高性能』使用体验的组件库。
@@ -16,8 +16,12 @@
 </template>
 
 <script> 
+import Tree from './Tree'
 export default {
-  name: 'guide'
+  name: 'component',
+  components: {
+    Tree
+  }
 }
 </script>
 

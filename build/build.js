@@ -12,12 +12,6 @@ var webpack = require('webpack')
 var config = require('../config')
 var webpackConfig = require('./webpack.prod.conf')
 
-if (env === 'pkg') {
-  webpackConfig = require('./webpack.pkg.conf')
-} else if (env === 'kit') {
-  webpackConfig = require('./webpack.kit.conf')
-}
-
 var spinner = ora('building for production...')
 spinner.start()
 
