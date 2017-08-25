@@ -9,11 +9,13 @@ var baseWebpackConfig = require('./webpack.base.conf')
 
 module.exports = {
   entry: {
-    app: './src/wm-kit/main.js'
+    app: './package/main.js'
   },
   output: {
-    path: path.resolve(__dirname, '../kit'),
-    filename: 'index.js'
+    path: path.resolve(__dirname, '../lib'),
+    filename: 'index.js',
+    library: 'Wui',
+    libraryTarget: 'window'
   },
   module: {
     rules: baseWebpackConfig.module.rules.concat(utils.styleLoaders({

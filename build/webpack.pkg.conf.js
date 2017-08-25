@@ -44,7 +44,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../kit'),
+        from: path.resolve(__dirname, '../lib'),
         to: config.pkg.assetsSubDirectory,
         ignore: ['.css']
       }
