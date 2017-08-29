@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="wui.png">
+</p>
+
 # wui
 
 [![Build Status](https://travis-ci.org/wmfe/wui.svg?branch=master)](https://travis-ci.org/wmfe/wui)
