@@ -1,3 +1,5 @@
+ <div class="text-area">
+
 ## Toast 组件
 
 ### 基本用法
@@ -25,12 +27,6 @@ methods: {
 ```
 
 ### 使用示例
-
-<template>
-  <div :style="{textAlign: 'left'}">
-    <button @click="duration">控制显示时间</button>
-  </div>
-</template>
 
 
 ```html
@@ -70,8 +66,20 @@ content             |   String | ''     |    toast弹出的内容
 duration          |         Number     |  2000ms        |   toast显示的时间
 style | Object | null | 自定义toast的样式
 
+
+</div>
+<div class="demo-area">
+  <div class="demo-phone">
+    <template>
+      <div :style="{textAlign: 'left'}">
+        <button @click="duration">控制显示时间</button>
+      </div>
+    </template>
+  </div>
+</div>
+
 <script>
-import Toast from 'package/toast/index.js'
+import Toast from 'packages/toast/index.js'
 import Vue from 'vue'
 
 Vue.use(Toast)

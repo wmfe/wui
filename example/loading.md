@@ -6,7 +6,7 @@
   <loading v-show="loading"></loading>
 </template>
 <script>
-  import Loading from 'package/loading/src/Loading.vue'
+  import Loading from 'packages/loading/src/Loading.vue'
 
   export default {
     components: {
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Loading from 'package/loading/src/Loading.vue'
+import Loading from 'packages/loading/src/Loading.vue'
 
 export default {
   data() {

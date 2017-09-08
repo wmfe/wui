@@ -72,7 +72,7 @@ callback          |         func     |  () => {}        |   点击确定后的�
 style | Object | null | 自定义toast的样式
 
 <script>
-import Message from 'package/messageBox/index.js'
+import Message from 'packages/messageBox/index.js'
 import Vue from 'vue'
 
 Vue.use(Message)

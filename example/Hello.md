@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import drawer from 'pkg/drawer.js'
+import drawer from 'packages/drawer'
 
 export default {
   name: 'hello',

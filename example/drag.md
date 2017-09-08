@@ -1,3 +1,5 @@
+<div class="text-area">
+
 # Vue-drag-2.0
   适用于vue2.0
 
@@ -11,16 +13,11 @@ github: <https://github.com/ppya0812/vue-drag-2.0>
 		
 
   #### 页面调用
-```
-<template>
-	<div v-sortable="{onUpdate: onUpdate, preventOnFilter: false}" class="drag-list">
-		<div v-for="v in list" :key="v" class="drag-item">
-		</div>
-	</div>
-</template>
+
+```javascript
 <script>
 import Vue from 'vue'
-import Drag from 'package/drag/src/vueDrag'
+import Drag from 'packages/drag/src/vueDrag'
 
 Vue.use(Drag)
 export default {
@@ -38,18 +35,21 @@ export default {
 </script>
 ```
 
-## 使用示例
-<template>
-	<div v-sortable="{onUpdate: onUpdate, preventOnFilter: false}" class="drag-list">
-		<div v-for="v in list" :key="v" class="drag-item">
-			{{v}}
-		</div>
+</div>
+<div class="demo-area">
+  <div class="demo-phone">
+		<template>
+			<div v-sortable="{onUpdate: onUpdate, preventOnFilter: false}" class="drag-list">
+				<div v-for="v in list" :key="v" class="drag-item">
+				</div>
+			</div>
+		</template>
 	</div>
-</template>
+</div>
 
 <script>
 import Vue from 'vue'
-import Drag from 'package/drag/src/vueDrag'
+import Drag from 'packages/drag/src/vueDrag'
 
 Vue.use(Drag)
 export default {

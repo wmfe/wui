@@ -17,7 +17,9 @@ module.exports = {
     app: './src/main.js'
   },
   output: {
-    path: config.build.assetsRoot,
+    path: process.env.NODE_ENV === 'production'
+      ? config.build.assetsRoot
+      : (process.env.NODE_ENV === 'pkg' ? config.pkg.assetsRoot : '/'),
     filename: '[name].js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
@@ -27,10 +29,9 @@ module.exports = {
     extensions: ['.js', '.vue', '.json', '.md'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
-      'package': resolve('package'),
+      'src': resolve('src'),
+      'packages': resolve('packages'),
       'example': resolve('example'),
-      'pkg': resolve('pkg')
     }
   },
   module: {
@@ -57,7 +58,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('package')]
+        include: [resolve('src'), resolve('dev'), resolve('test'), resolve('package')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

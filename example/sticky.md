@@ -1,3 +1,5 @@
+<div class="text-area">
+
 ## 3. sticky组件
 
 ### 项目源码地址
@@ -38,3 +40,11 @@ name            |           type     |  default   |                        descr
 --------------- | -------------:     | :--------: | :--------------------------------------------------------:
 top             |   [Number, String] | 'auto'     |                 定位时距离顶部的距离，默认保持跟firefox的实现一致
 z-ndex          |         Number     |  10        |                 css中的z-index值
+
+
+</div>
+<div class="demo-area">
+  <div class="demo-phone">
+
+  </div>
+</div>

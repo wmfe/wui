@@ -67,7 +67,7 @@ search搜索框是升级后的input组件，能够提供搜索参照项
 
 
 <script>
-import search from 'package/search/src/Search'
+import search from 'packages/search/src/Search'
 
 export default {
   components: {

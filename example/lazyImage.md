@@ -1,3 +1,5 @@
+ <div class="text-area">
+ 
  ## 图片懒加载
 
   ```
@@ -18,7 +20,7 @@
 </template>
 
 <script>
-import LazyImage from 'package/lazyImage/src/LazyImage'
+import LazyImage from 'packages/lazyImage/src/LazyImage'
 
 export default {
   components: {
@@ -28,14 +30,19 @@ export default {
   ```
 
 
+</div>
+<div class="demo-area">
+  <div class="demo-phone">
+    <template>
+      <lazy-image src="https://img.waimai.baidu.com/pb/d9cd8c9ed62c502ea5fb29009d725bf6ec" style="height: 200px"></lazy-image>
+    </template>
+  </div>
+</div>
 
-### 使用示例
-<template>
-  <lazy-image src="https://img.waimai.baidu.com/pb/d9cd8c9ed62c502ea5fb29009d725bf6ec" style="height: 200px"></lazy-image>
-</template>
+
 
 <script>
-import LazyImage from 'package/lazyImage/src/LazyImage'
+import LazyImage from 'packages/lazyImage/src/LazyImage'
 
 export default {
   components: {

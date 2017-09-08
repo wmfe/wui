@@ -1,0 +1,42 @@
+.wui-accordion {
+  padding: 0;
+  background: #FFF;
+
+  .list-accordion {
+    margin: -1px 0 0 0;
+    -webkit-transition: $accordion-transition;
+    transition: $accordion-transition;
+    height: 50px;
+
+    .item-icon-right {
+      z-index: 2;
+      .icon.ion-arrow-down-b {
+        color: #888;
+        -webkit-transition: $accordion-transition;
+        transition: $accordion-transition;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        font-size: 16px;
+
+        &.rotated {
+          transform: rotate(179.9deg);
+          -webkit-transform: rotate(179.9deg);
+        }
+      }
+    }
+
+    .accordion-content {
+      z-index: 1;
+      padding-left: 15px;
+    }
+  }
+}
+
+.wui-accordion-enter-active, .wui-accordion-leave-active {
+  transition: all .25s cubic-bezier(0.4, 0.6, 0.2, 1);;
+  -webkit-transition: all .25s cubic-bezier(0.4, 0.6, 0.2, 1);;
+  opacity: 1;
+}
+.wui-accordion-enter, .wui-accordion-leave-to {
+  opacity: 0;
+}
