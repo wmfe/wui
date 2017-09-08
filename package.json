@@ -11,7 +11,8 @@
     "build": "node build/build.js",
     "pkg": "npm run kit && cross-env NODE_ENV=\"pkg\" node build/build.js",
     "kit": "cross-env NODE_ENV=\"kit\" node build/build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "test": ""
   },
   "dependencies": {
     "vue": "^2.2.6",
